@@ -1,0 +1,43 @@
+@url = http://localhost:8080/api/files
+
+POST {{url}}
+Content-Type: application/json
+
+{
+"sourceDir": "/Users/dejwilli/Downloads",
+"destFolderName": "test2"
+}
+
+###
+
+DELETE {{url}}
+Content-Type: application/json
+
+{
+  "sourceDir": "/Users/dejwilli/Downloads/test2"
+}
+
+###
+
+PUT {{url}}
+Content-Type: application/json
+
+{
+  "sourceDir":"/Users/dejwilli/Downloads",
+  "destDir": "/Users/dejwilli/Downloads/test",
+  "keyword": "Adeja"
+}
+
+### files
+
+DELETE {{url}}/delete
+Content-Type: application/json
+
+{
+  "sourceDir":"/Users/dejwilli/Downloads",
+  "keyword": "CSResume.pdf"
+}
+
+###
+
+
