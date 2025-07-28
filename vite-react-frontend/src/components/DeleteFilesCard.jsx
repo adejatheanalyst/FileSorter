@@ -79,7 +79,7 @@ export default function DeleteFilesCard (){
             </ul>}
             <Stack>
             <div id={"folderHelp"} className={"form-text"}>Folder to Delete or Look Through.
-                <Button onClick={selectFolderToDelete} colorPalette="purple" variant="surface">
+                <Button id="button" onClick={selectFolderToDelete} colorPalette="purple" variant="surface">
                     Select Folder
                 </Button>
                 <Input mt={3} name={"sourceDir"} value={deleteRequest.sourceDir} readOnly
@@ -94,7 +94,7 @@ export default function DeleteFilesCard (){
                    name={"keyword"} value={deleteRequest.keyword}
                    onChange={handleKeywordChange}/>
                 </div>
-                <Button onClick={handleDelete} colorPalette="purple" variant="surface">
+                <Button id="button" onClick={handleDelete} colorPalette="purple" variant="surface">
                     Delete
                 </Button>
 

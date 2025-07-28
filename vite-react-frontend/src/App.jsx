@@ -9,6 +9,28 @@ import DeleteFilesCard from "@/components/DeleteFilesCard.jsx";
 import {  defineConfig } from "@chakra-ui/react"
 
 function App() {
+
+// $(document).ready(hidetest(){
+//   $(h1).hide();
+// });
+
+// $(document).ready(function(){
+//   $("button").click(function(){
+//     $("h1").hide();
+//   });
+// });
+// $("*").hover(function(){
+//   alert("You entered p");
+// },
+// function(){
+//   alert("You left");
+// });
+
+// $(function(){
+//   $("*").hide();
+// })
+
+
   return (
     <>
       <div>
@@ -16,7 +38,8 @@ function App() {
           <img src={reactLogo} className="logo"  />
         </Icon>
       </div>
-      <h1>File Sorter!</h1>
+
+    <h1>File Sorter!</h1>
 
         <Flex gap="4" justify={"center"}>
             <div className="card">

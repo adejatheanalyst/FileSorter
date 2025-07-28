@@ -11,8 +11,9 @@ export default function FileRequestCard(){
         destDir:'',
         keyword:''
     })
+    // function to create a folder
     const handleCreateFolder = () =>{
-        fetch("http://localhost:8080/api/files",{
+        fetch("http://localhost:8080/api/files",{ // api call to backend using fetch
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json',
@@ -116,7 +117,7 @@ export default function FileRequestCard(){
                     <div class={"mb-3"}>
                         <div id={"folderHelp"} className={"form-text"}>Select Folder to Organize.
                         </div>
-                        <Button onClick={selectFolder} colorPalette="purple" variant="surface">
+                        <Button id="button" onClick={selectFolder} colorPalette="purple" variant="surface">
                             Select Folder
                         </Button>
                         <Input mt={3} name={"sourceDir"} value={createFolderRequest.sourceDir} readOnly
@@ -149,7 +150,7 @@ export default function FileRequestCard(){
                                 <Input mt={3} name={"destDir"} value={request.destDir} readOnly
                                        placeholder="Move files here"/>
                             </div>
-                            <Button type={"submit"} colorPalette="purple" variant="surface">
+                            <Button  id="button" type={"submit"} colorPalette="purple" variant="surface">
                                 Move files
                             </Button>
                         </Flex>
